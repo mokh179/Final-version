@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/datatables.net-dt/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="../node_modules/datatables-bootstrap/css/dataTables.bootstrap.min.css">
+  <link href="../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="../node_modules/font-awesome/css/brands.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="../main.css" rel="stylesheet">
+  <script src="../main.js"></script>
+
+</head>
+
+<body>
+  <div>
+    <div class="page-wrapper chiller-theme toggled">
+      <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+        <i class="fas fa-bars"></i>
+      </a>
+      <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+          <div class="sidebar-brand">
+            <a href="#">MVMA Pharma</a>
+            <div id="close-sidebar">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="sidebar-header">
+            <div class="user-pic">
+              <img class="img-responsive img-rounded"
+                src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                alt="User picture">
+            </div>
+            <div class="user-info">
+              <span class="user-name">Ghada
+                <strong>kadous</strong>
+              </span>
+              <span class="user-role">Administrator</span>
+              <span class="user-status">
+                <i class="fa fa-circle"></i>
+                <span>Online</span>
+              </span>
+            </div>
+          </div>
+          <!-- sidebar-header  -->
+          <div class="sidebar-search">
+            <div>
+              <div class="input-group">
+                <input type="text" class="form-control search-menu" placeholder="Search...">
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sidebar-search  -->
+          <div class="sidebar-menu">
+            <ul>
+              <li class="header-menu">
+                <span>General</span>
+              </li>
+
+             
+
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fa fa-tachometer-alt"></i>
+                  <span>Dashboard</span>
+                  <span class="badge badge-pill badge-warning">New</span>
+                </a>
+              </li>
+              <!-- Medicine -->
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fas fa-medkit"></i>
+                  <span>Medicine</span>
+                  <span class="badge badge-pill badge-danger">3</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="../Medicine/Medicine.html">Manage</a>
+                    </li>
+                    <li>
+                      <a href="../Medicine/addMedicine.html">Add</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Users -->
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fas fa-users"></i>
+                  <span>Users</span>
+                  <span class="badge badge-pill badge-danger">3</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="../Users/Users.html">Manage</a>
+                    </li>
+                    <li>
+                      <a href="../Users/AddUserForm.html">Add</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Suppliers -->
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fab fa-supple"></i>
+                  <span>Suppliers</span>
+                  <span class="badge badge-pill badge-danger">3</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="../Supplier/Supplier.html">Manage</a>
+                    </li>
+                    <li>
+                      <a href="../Supplier/AddSupplierForm.html">Add</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Category -->
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="far fa-sticky-note"></i>
+                  <span>Category</span>
+                  <span class="badge badge-pill badge-danger">3</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="../Category/Category.html">Manage</a>
+                    </li>
+                    <li>
+                      <a href="../Category/AddCategoryForm.html">Add</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Invoices -->
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fas fa-list"></i>
+                  <span>Invoices</span>
+                  <span class="badge badge-pill badge-danger">3</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="../Supplier/SupplierInvoices.html">Supplier Invoices</a>
+                    </li>
+                    <li>
+                      <a href="../CustomerInvoice/customerInvoices.html">Customer Invoices</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="sidebar-dropdown">
+                <a href="#">
+                  <i class="fa fa-globe"></i>
+                  <span>Maps</span>
+                </a>
+                <div class="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="#">Google maps</a>
+                    </li>
+                    <li>
+                      <a href="#">Open street map</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header-menu">
+                <span>Extra</span>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-calendar"></i>
+                  <span>Calendar</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+          <!-- sidebar-menu  -->
+        </div>
+        <!-- sidebar-content  -->
+        <div class="sidebar-footer">
+          <a href="#">
+            <i class="fa fa-bell"></i>
+            <span class="badge badge-pill badge-warning notification">3</span>
+          </a>
+          <a href="#">
+            <i class="fa fa-envelope"></i>
+            <span class="badge badge-pill badge-success notification">7</span>
+          </a>
+          <a href="#">
+            <i class="fa fa-cog"></i>
+            <span class="badge-sonar"></span>
+          </a>
+          <a href="#">
+            <i class="fa fa-power-off"></i>
+          </a>
+        </div>
+      </nav>
+      <!-- sidebar-wrapper  -->
+      <!-- body content -->
+      <main class="page-content">
+        <div class="container-fluid">
+          <h2>Dashboard</h2>
+          <hr>
+          <div class="row ">
+            <div class="col-md-12 ">
+              <!-- main card -->
+
+              <div class="card mb-3 shadow p-3  shadow p-3  bg-white rounded">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="photos/user-adm.png" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body ">
+                      <h5 class="card-title ">Welcome Back</h5>
+                      <h4 class="text-info">Ghada Kadous</h4>
+                      <p class="card-text">No tasks has been added to your scheduale today.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="card  text-white">
+                          <img src="https://place-hold.it/900x200" class="card-img" alt="...">
+                          <div class="card-img-overlay">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                  additional content. This content is a little bit longer.</p>
+                              <p class="card-text">Last updated 3 mins ago</p>
+                          </div>
+                      </div> -->
+              <!-- 3 cards -->
+              <div class="row my-3">
+                <!-- card 1 -->
+                <div class="col-md-4">
+                  <div class="card mb-3 shadow p-3  shadow p-3  bg-white rounded" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <!-- <div class="col-md-4"> 
+                                      <img src="https://place-hold.it/900x1655" class="card-img" alt="...">
+                                    </div>-->
+                      <div class="col">
+                        <div class="card-body">
+                          <h5 class="card-title text-info">Online Users</h5>
+                          <h2 class="card-text">2</h2>
+                          
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                       </div>
+                       <div class="col-md-4">
+                        <br>
+                       <img src="photos/online uset.png" class="card-img " alt="..." >
+                     </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div class="col-md-4">
+                  <div class="card mb-3 shadow p-3  shadow p-3  bg-white rounded" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <!-- <div class="col-md-4">
+                                      <img src="https://place-hold.it/900x1655" class="card-img" alt="...">
+                                    </div> -->
+                      <div class="col">
+                        <div class="card-body">
+                          <h5 class="card-title text-info">About to Expire</h5>
+                          <h2 class="card-text">20</h2>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <br>
+                       <img src="photos/abt 2 exp.png" class="card-img " alt="..." >
+                     </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 3 -->
+                <div class="col-md-4">
+                  <div class="card mb-3 shadow p-3  shadow p-3  bg-white rounded" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <!-- <div class="col-md-4"> 
+                                      <img src="https://place-hold.it/900x1655" class="card-img" alt="...">
+                                    </div>-->
+                      <div class="col">
+                        <div class="card-body">
+                          <h5 class="card-title text-info">Out of Stock</h5>
+                          <h2 class="card-text">10</h2>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                        </div>
+                      <div class="col-md-4">
+                        <br>
+                       <img src="photos/out of stock.png" class="card-img " alt="..." >
+                     </div>
+                    </div>
+                  </div>
+                </div>
+                             </div>
+              <!-- middle -->
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-3 shadow p-3  shadow p-3  bg-white rounded" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <!-- <div class="col-md-4"> 
+                                      <img src="https://place-hold.it/900x1655" class="card-img" alt="...">
+                                    </div>-->
+                      <div class="col">
+                        <div class="card-body">
+                          <h5 class="card-title text-info">CX invoices</h5>
+                          <h2 class="card-text ">100</h2>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <p></p>
+                        <img src="photos/invoice.png" class="card-img" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3 shadow p-3  shadow p-3  bg-white rounded" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <!-- <div class="col-md-4"> 
+                                      <img src="https://place-hold.it/900x1655" class="card-img" alt="...">
+                                    </div>-->
+                      <div class="col">
+                        <div class="card-body">
+                          <h5 class="card-title text-info">Suppliers invoices</h5>
+                          <h2 class="card-text ">3 </h2>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <p></p>
+                        <img src="photos/invoice.png" class="card-img" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card  text-white shadow p-3  shadow p-3  bg-white rounded">
+                    <h5 class="card-title text-info">Best-Selling product</h5>
+                    <img src="photos/chart3.PNG" class="card-img" alt="..." height="300px;">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card  text-white shadow p-3  shadow p-3  bg-white rounded">
+                    
+                    <img src="photos/calendar.png" class="card-img" alt="..." height="335px;">
+                  </div>
+                </div>
+              </div>
+              <!-- last row 2 columns -->
+              <div class="row ">
+                <div class="col-md-8">
+                  <div class="card text-white shadow p-3  shadow p-3  bg-white rounded">
+                    <img src="photos\chart1.png"
+                      class="card-img" alt="...">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card  text-white shadow p-3  shadow p-3  bg-white rounded">
+                    <h5 class=" text-info">Lead Target</h5>
+                    <img src="photos\chart 2.png"
+                      class="card-img" alt="..." height="225px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="text-center">
+            <div class="mb-2">
+              <small>
+                © 2021 made with</i> by - <a target="_blank" rel="noopener noreferrer"
+                  href="https://github.com/mokh179/Bootstrap-Proj">
+                  MVMA
+                </a>
+              </small>
+            </div>
+            <div>
+              <a href="https://github.com/mokh179/Final-Project" target="_blank">
+                <img alt="GitHub followers"
+                  src="https://img.shields.io/github/followers/azouaoui-med?label=github&style=social" />
+              </a>
+              <!-- <a href="#" target="_blank">
+                <img alt="Twitter Follow"
+                  src="https://img.shields.io/twitter/follow/azouaoui_med?label=twitter&style=social" />
+              </a> -->
+            </div>
+          </footer>
+        </div>
+      </main>
+      <!-- page-content" -->
+    </div>
+  </div>
+
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/"></script>
+  <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="../node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#example').DataTable();
+    });
+    jQuery(function ($) {
+      $(".sidebar-dropdown > a").click(function () {
+        $(".sidebar-submenu").slideUp(200);
+        if (
+          $(this)
+            .parent()
+            .hasClass("active")
+        ) {
+          $(".sidebar-dropdown").removeClass("active");
+          $(this)
+            .parent()
+            .removeClass("active");
+        } else {
+          $(".sidebar-dropdown").removeClass("active");
+          $(this)
+            .next(".sidebar-submenu")
+            .slideDown(200);
+          $(this)
+            .parent()
+            .addClass("active");
+        }
+      });
+
+      $("#close-sidebar").click(function () {
+        $(".page-wrapper").removeClass("toggled");
+      });
+      $("#show-sidebar").click(function () {
+        $(".page-wrapper").addClass("toggled");
+      });
+    });
+  </script>
+</body>
