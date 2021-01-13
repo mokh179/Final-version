@@ -5,6 +5,7 @@ let x=localStorage.id ++;
 db.transaction(function (t) {
   t.executeSql('create table if not exists Users(id unique,name,User_name,Phone,email,Password,Address,role)')
   t.executeSql('create table if not exists Medicine(id unique,name,cat,quantity,sellingPrice,purchasingPrice,expirationDate,image)')
+  t.executeSql('create table if not exists Invoices(id,Phaname,custName,Medname,quantity,price,Total,Date)')
 });
 
 
@@ -23,7 +24,42 @@ function addMed() {
         tx.executeSql('insert into Medicine (id,name,cat,quantity,sellingPrice,purchasingPrice,expirationDate,image) VALUES (?,?,?,?,?,?,?,?)', [id, Medname,cat,quantity, sellingPrice, purcahsingPrice, exdate,img ]);
     })
 }
+//Add invoices
+function addinv() {
+  debugger;
+  var id = x;
+  let pharname='Ali'
+  let Custname=document.getElementById("cust").value;
+  let Dte=Date.now();
+  var in1;
+  var in2;
+  var in3;
+  var in4;
+   var cellVal
+   //gets table
+   var intable = document.getElementById('Invoice');
+    debugger;
+   //gets rows of table
+   var rowLength = intable.rows.length;
 
+   //loops through rows    
+   for (i = 1; i < rowLength; i++){
+
+     //gets cells of current row  
+      var oCells = intable.rows.item(i).cells;
+
+      //gets amount of cells of current row
+      var cellLength = oCells.length;
+      in1=oCells.item(0).innerHTML;
+      in2=oCells.item(1).innerHTML;
+      in3=oCells.item(2).innerHTML;
+      in4=oCells.item(3).innerHTML;
+      db.transaction(function (tx) {
+        tx.executeSql('insert into Invoices (id,Phaname,custName,Medname,quantity,price,Total,Date) VALUES (?,?,?,?,?,?,?,?)', [id, pharname,Custname,in1, in3, in2, in4,Dte]);
+    })
+      
+   }
+}
 
 //Get All Medicine
  db.transaction(function (t) {

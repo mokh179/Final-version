@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="../node_modules/datatables.net-dt/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="../node_modules/datatables-bootstrap/css/dataTables.bootstrap.min.css">
     <link href="../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
- 
+
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="../main.css" rel="stylesheet">
-    <script src="../main.js"></script>
+    <script src="../DB.js"></script>
 
 </head>
 
@@ -73,95 +73,95 @@
                                 </a>
                             </li>
                             <!-- Medicine -->
-                    <li class="sidebar-dropdown">
-                        <a href="#">
-                          <i class="fas fa-medkit"></i>
-                          <span>Medicine</span>
-                          <span class="badge badge-pill badge-danger">3</span>
-                        </a>
-                        <div class="sidebar-submenu">
-                          <ul>
-                            <li>
-                              <a href="../Medicine/Medicine.html">Manage</a>
+                            <li class="sidebar-dropdown">
+                                <a href="#">
+                                    <i class="fas fa-medkit"></i>
+                                    <span>Medicine</span>
+                                    <span class="badge badge-pill badge-danger">3</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="../Medicine/Medicine.html">Manage</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Medicine/addMedicine.html">Add</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li>
-                              <a href="../Medicine/addMedicine.html">Add</a>
+                            <!-- Users -->
+                            <li class="sidebar-dropdown">
+                                <a href="#">
+                                    <i class="fas fa-users"></i>
+                                    <span>Users</span>
+                                    <span class="badge badge-pill badge-danger">3</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="../Users/Users.html">Manage</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Users/AddUserForm.html">Add</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <!-- Users -->
-                      <li class="sidebar-dropdown">
-                          <a href="#">
-                              <i class="fas fa-users"></i>
-                            <span>Users</span>
-                            <span class="badge badge-pill badge-danger">3</span>
-                          </a>
-                          <div class="sidebar-submenu">
-                            <ul>
-                              <li>
-                                <a href="../Users/Users.html">Manage</a>
-                              </li>
-                              <li>
-                                <a href="../Users/AddUserForm.html">Add</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </li>
-                        <!-- Suppliers -->
-                        <li class="sidebar-dropdown">
-                          <a href="#">
-                              <i class="fab fa-supple"></i>
-                            <span>Suppliers</span>
-                            <span class="badge badge-pill badge-danger">3</span>
-                          </a>
-                          <div class="sidebar-submenu">
-                            <ul>
-                              <li>
-                                <a href="../Supplier/Supplier.html">Manage</a>
-                              </li>
-                              <li>
-                                <a href="../Supplier/AddSupplierForm.html">Add</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </li>
-                        <!-- Category -->
-                        <li class="sidebar-dropdown">
-                          <a href="#">
-                              <i class="far fa-sticky-note"></i>
-                            <span>Category</span>
-                            <span class="badge badge-pill badge-danger">3</span>
-                          </a>
-                          <div class="sidebar-submenu">
-                            <ul>
-                              <li>
-                                <a href="../Category/Category.html">Manage</a>
-                              </li>
-                              <li>
-                                <a href="../Category/AddCategoryForm.html">Add</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </li>
-                        <!-- Invoices -->
-                        <li class="sidebar-dropdown">
-                          <a href="#">
-                              <i class="fas fa-list"></i>
-                            <span>Invoices</span>
-                            <span class="badge badge-pill badge-danger">3</span>
-                          </a>
-                          <div class="sidebar-submenu">
-                            <ul>
-                              <li>
-                                <a href="../Supplier/SupplierInvoices.html">Supplier Invoices</a>
-                              </li>
-                              <li>
-                                <a href="../CustomerInvoice/customerInvoices.html">Customed Invoices</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </li>
+                            <!-- Suppliers -->
+                            <li class="sidebar-dropdown">
+                                <a href="#">
+                                    <i class="fab fa-supple"></i>
+                                    <span>Suppliers</span>
+                                    <span class="badge badge-pill badge-danger">3</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="../Supplier/Supplier.html">Manage</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Supplier/AddSupplierForm.html">Add</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- Category -->
+                            <li class="sidebar-dropdown">
+                                <a href="#">
+                                    <i class="far fa-sticky-note"></i>
+                                    <span>Category</span>
+                                    <span class="badge badge-pill badge-danger">3</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="../Category/Category.html">Manage</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Category/AddCategoryForm.html">Add</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- Invoices -->
+                            <li class="sidebar-dropdown">
+                                <a href="#">
+                                    <i class="fas fa-list"></i>
+                                    <span>Invoices</span>
+                                    <span class="badge badge-pill badge-danger">3</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="../Supplier/SupplierInvoices.html">Supplier Invoices</a>
+                                        </li>
+                                        <li>
+                                            <a href="../CustomerInvoice/customerInvoices.html">Customed Invoices</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li class="sidebar-dropdown">
                                 <a href="#">
                                     <i class="fa fa-globe"></i>
@@ -216,68 +216,96 @@
                 <div class="container-fluid">
                     <h2>Add Invoice</h2>
                     <hr>
-                    <form>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroup-sizing-default">Customer Name</span>
-                            </div>
-                            <input type="text" id="cust" class="form-control" aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-default">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Customer
+                                            Name</span>
+                                    </div>
+                                    <input type="text" id="cust" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" >
+                                </div>
+
+
+
+
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="inputGroupSelect01">Medicine</label>
+                                    </div>
+                                    <select class="custom-select" id="med">
+                                        <option>Choose...</option>
+                                        <option value="test">One</option>
+                                        <option value="test">Two</option>
+                                        <option value="test">Three</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"> Price</span>
+                                    </div>
+                                    <input type="Number" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" id="prc">
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Quantity</span>
+                                    </div>
+                                    <input type="Number" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-default" id="qty">
+                                </div>
+
+                                <div class="text-center">
+                                    <a role="button" class="btn btn-success" id="ap" onclick="ins()">
+                                        Add
+                                    </a>
+                                </div>
+                            </form>
                         </div>
-
-
-
-
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <label class="input-group-text" for="inputGroupSelect01">Medicine</label>
+                        <div class="col-md-6">
+                            <div class="container text-center text-muted">
+                                <p>MVMA</p>
+                                <p>Pharmaist: <span id="phname">Ali</span> 
+                                    customerName: <span id="Label"></span>
+                                </p>
+                                <table class="table" id="Invoice">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Medicine Name</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+ 
+                                    </tbody>
+                                </table>
+                                <div>
+                                    <div class="input-group w-25 p-3 float-right my-2" >
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">Tax</span>
+                                            <span class="input-group-text">14%</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="totinv" aria-label="Dollar amount (with dot and two decimal places)" readonly>
+                                        
+                                      </div>
+                                      <a role="button" class="btn btn-success" id="ap" onclick="addinv()">
+                                        Submit
+                                    </a>
+                                </div>
+                               
                             </div>
-                            <select class="custom-select" id="med">
-                                <option>Choose...</option>
-                                <option value="test">One</option>
-                                <option value="test">Two</option>
-                                <option value="test">Three</option>
-                            </select>
                         </div>
-                         
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" > Price</span>
-                            </div>
-                            <input type="Number" class="form-control" aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-default" id="prc">
-                        </div>
+                    </div>
 
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" >Quantity</span>
-                            </div>
-                            <input type="Number" class="form-control" aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-default" id="qty">
-                        </div>
                 </div>
-                <div class="text-center">
-                    <a role="button" class="btn btn-success" id="ap" onclick="ins()">
-                        Add
-                    </a>
-                </div>
-                </form>
-                <div class="container text-center text-muted">
-                    <p>Customer Name : <span id="Label"></span></p>
-                    <table class="table" id="Invoice">
-                        <thead>
-                            <tr>
-                                <th scope="col">Medicine Name</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
 
-                        </tbody>
-                    </table>
-                </div>
+
 
                 <!-- Footer -->
                 <footer class="text-center">
@@ -290,8 +318,9 @@
                         </small>
                     </div>
                     <a href="https://github.com/mokh179/Final-Project" target="_blank">
-                        <img alt="GitHub followers" src="https://img.shields.io/github/followers/azouaoui-med?label=github&style=social" />
-                      </a>
+                        <img alt="GitHub followers"
+                            src="https://img.shields.io/github/followers/azouaoui-med?label=github&style=social" />
+                    </a>
                 </footer>
         </div>
         </main>
@@ -338,23 +367,36 @@
         });
     </script>
     <script>
-        
-
+     var total=0;
+     var personName = document.getElementById('cust');
+            var medicineName ;
+            var Quantity;
+            var Price ;
+            var ap ;
+            var lbl ;
+            var Invoice;
+            var tot; 
+           var total=0;
+           
         function ins() {
             debugger;
-            var personName = document.getElementById('cust');
-            var medicineName = $("#med").val();
-            var Quantity = $("#qty").val();
-            var Price = $("#prc").val();
-            var ap = document.getElementById('add');
-            var lbl = document.getElementById('Label');
-            var Invoice = document.getElementById('Invoice');
+             medicineName = $("#med").val();
+             Quantity = $("#qty").val();
+             Price = $("#prc").val();
+             ap = document.getElementById('add');
+             lbl = document.getElementById('Label');
+             Invoice = document.getElementById('Invoice');
+             tot=Quantity*Price
+             total+=tot*1.14;
             lbl.innerHTML = cust.value;
             content = Invoice.innerHTML;
-            content += "<tr><td>" + medicineName + "</td><td>" + Quantity + "</td><td>" +Price+ "</td><td>" + Quantity * Price + "</td></tr>";
+            content += "<tr><td>" + medicineName + "</td><td>" + Quantity + "</td><td>" + Price + "</td><td>" + Quantity * Price + "</td></tr>";
             Invoice.innerHTML = content;
-            $("#med").val()="";
-            $("#qty").val()="";
+            $("#totinv").val(total);
+            $("#med").val("");
+            $("#qty").val(0);
+            $("#prc").val(0);
         }
+        
     </script>
 </body>
