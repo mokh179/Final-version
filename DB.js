@@ -59,7 +59,9 @@ function addinv() {
     })
       
    }
-}
+
+    rel();
+  }
 
 //Get All Medicine
  db.transaction(function (t) {

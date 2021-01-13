@@ -214,15 +214,7 @@
             <!-- sidebar-wrapper  -->
             <main class="page-content">
                 <div class="container-fluid">
-                    <div class="d-flex flex-row bd-highlight mb-3">
-                        <div class=" bd-highlight">
-                            <i class="bi bi-file-text" style="font-size: 40px;"></i>
-                        </div>
-                        <div class="pt-2 bd-highlight">
-                            <h3 class="mb-0">Add Invoice</h3>
-                            <small class="p-auto">Add new one</small>
-                        </div>
-                    </div>
+                    <h2>Add Invoice</h2>
                     <hr>
                     <div class="row">
                         <div class="col-md-6">
@@ -233,7 +225,7 @@
                                             Name</span>
                                     </div>
                                     <input type="text" id="cust" class="form-control" aria-label="Sizing example input"
-                                        aria-describedby="inputGroup-sizing-default">
+                                        aria-describedby="inputGroup-sizing-default" >
                                 </div>
 
 
@@ -277,7 +269,7 @@
                         <div class="col-md-6">
                             <div class="container text-center text-muted">
                                 <p>MVMA</p>
-                                <p>Pharmaist: <span id="phname">Ali</span>
+                                <p>Pharmaist: <span id="phname">Ali</span> 
                                     customerName: <span id="Label"></span>
                                 </p>
                                 <table class="table" id="Invoice">
@@ -290,24 +282,23 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-
+ 
                                     </tbody>
                                 </table>
                                 <div>
-                                    <div class="input-group w-25 p-3 float-right my-2">
+                                    <div class="input-group w-25 p-3 float-right my-2" >
                                         <div class="input-group-append">
                                             <span class="input-group-text">Tax</span>
                                             <span class="input-group-text">14%</span>
                                         </div>
-                                        <input type="text" class="form-control" id="totinv"
-                                            aria-label="Dollar amount (with dot and two decimal places)" readonly>
-
-                                    </div>
-                                    <a role="button" class="btn btn-success" id="ap" onclick="addinv()">
+                                        <input type="text" class="form-control" id="totinv" aria-label="Dollar amount (with dot and two decimal places)" readonly>
+                                        
+                                      </div>
+                                      <a role="button" class="btn btn-success" id="ap" onclick="addinv()">
                                         Submit
                                     </a>
                                 </div>
-
+                               
                             </div>
                         </div>
                     </div>
@@ -320,7 +311,7 @@
                 <footer class="text-center">
                     <div class="mb-2">
                         <small>
-                            © 2021 made with</i> by - <a target="_blank" rel="noopener noreferrer"
+                            ©️ 2021 made with</i> by - <a target="_blank" rel="noopener noreferrer"
                                 href="https://github.com/mokh179/Bootstrap-Proj">
                                 MVMA
                             </a>
@@ -376,27 +367,27 @@
         });
     </script>
     <script>
-        var total = 0;
-        var personName = document.getElementById('cust');
-        var medicineName;
-        var Quantity;
-        var Price;
-        var ap;
-        var lbl;
-        var Invoice;
-        var tot;
-        var total = 0;
-
+     var total=0;
+     var personName = document.getElementById('cust');
+            var medicineName ;
+            var Quantity;
+            var Price ;
+            var ap ;
+            var lbl ;
+            var Invoice;
+            var tot; 
+           var total=0;
+           
         function ins() {
             debugger;
-            medicineName = $("#med").val();
-            Quantity = $("#qty").val();
-            Price = $("#prc").val();
-            ap = document.getElementById('add');
-            lbl = document.getElementById('Label');
-            Invoice = document.getElementById('Invoice');
-            tot = Quantity * Price
-            total += tot * 1.14;
+             medicineName = $("#med").val();
+             Quantity = $("#qty").val();
+             Price = $("#prc").val();
+             ap = document.getElementById('add');
+             lbl = document.getElementById('Label');
+             Invoice = document.getElementById('Invoice');
+             tot=Quantity*Price
+             total+=tot*1.14;
             lbl.innerHTML = cust.value;
             content = Invoice.innerHTML;
             content += "<tr><td>" + medicineName + "</td><td>" + Quantity + "</td><td>" + Price + "</td><td>" + Quantity * Price + "</td></tr>";
@@ -407,5 +398,11 @@
             $("#prc").val(0);
         }
 
+
+        function rel() {
+            location.reload();
+
+        }
+        
     </script>
 </body>
