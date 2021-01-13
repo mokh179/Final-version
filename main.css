@@ -627,3 +627,7 @@ body, html {
     text-align: center;
   
 }
+small{
+  position: relative;
+  top: -8px;
+  left: 15px;
